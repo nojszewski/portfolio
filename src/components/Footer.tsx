@@ -21,7 +21,7 @@ const Footer = () => {
             </ul>
           </nav>
           <div className="flex items-center space-x-4">
-            <p className="text-sm">Built with React & Tailwind</p>
+            <p className="text-sm">Hosting <a href="#" className="hover:text-gray-300">LH.pl</a></p>
             <button
               onClick={scrollToTop}
               className="p-2 bg-[#2D3748] rounded-full hover:bg-gray-700 transition-colors"

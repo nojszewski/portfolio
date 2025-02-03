@@ -1,16 +1,18 @@
-import React from 'react';
+import React from 'react'
 
 const About = () => {
   const skills = [
     'JavaScript/TypeScript',
-    'React.js',
+    // 'React.js',
     'Node.js',
-    'Python',
-    'AWS',
     'Docker',
-    'PostgreSQL',
-    'MongoDB'
-  ];
+    'AWS',
+    'Proxmox VE',
+    'SQL',
+    'Linux',
+    'Git',
+    'Networking'
+  ]
 
   return (
     <section id="about" className="py-20 bg-[#0A192F] text-[#E2E8F0]">
@@ -26,8 +28,8 @@ const About = () => {
           <div>
             <h2 className="text-4xl font-bold mb-6">About Me</h2>
             <p className="text-lg mb-6 leading-relaxed">
-              With over 8 years of experience in software development, I've worked on 
-              various projects ranging from small startups to large enterprise applications. 
+              Continuously gaining experience in IT administration, programming, and more, 
+              I've worked on various projects ranging from web development to infrastructure
               My passion lies in creating efficient, scalable solutions that solve real-world problems.
             </p>
             <h3 className="text-2xl font-bold mb-4">Skills & Technologies</h3>
@@ -42,15 +44,14 @@ const About = () => {
               ))}
             </div>
             <p className="text-lg leading-relaxed">
-              When I'm not coding, you can find me exploring new technologies, 
-              contributing to open-source projects, or sharing knowledge through 
-              technical writing and mentoring.
+              When I'm not coding, you can find me enjoying a good cup of tea and traveling 
+              (as seen in the photo on the left, taken from an airplane window).
             </p>
           </div>
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default About;
+export default About

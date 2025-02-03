@@ -1,20 +1,20 @@
-import React, { useState } from 'react';
-import { Mail, Linkedin, Github, MapPin, Check, AlertCircle } from 'lucide-react';
+import React, { useState } from 'react'
+import { Mail, Linkedin, Github, MapPin, Check, AlertCircle } from 'lucide-react'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: ''
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const [error, setError] = useState('');
+  })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [isSubmitted, setIsSubmitted] = useState(false)
+  const [error, setError] = useState('')
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setError('');
+    e.preventDefault()
+    setIsSubmitting(true)
+    setError('')
     
     try {
       const response = await fetch('http://localhost:3000/api/contact', {
@@ -23,12 +23,12 @@ const Contact = () => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(formData),
-      });
+      })
 
-      const data = await response.json();
+      const data = await response.json()
 
       if (!response.ok) {
-        throw new Error(data.message || 'Failed to send message');
+        throw new Error(data.message || 'Failed to send message')
       }
 
       // Reset form
@@ -36,30 +36,30 @@ const Contact = () => {
         name: '',
         email: '',
         message: ''
-      });
+      })
       
-      setIsSubmitted(true);
+      setIsSubmitted(true)
       
       // Reset success message after 3 seconds
       setTimeout(() => {
-        setIsSubmitted(false);
-      }, 3000);
+        setIsSubmitted(false)
+      }, 3000)
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to send message');
+      setError(err instanceof Error ? err.message : 'Failed to send message')
       setTimeout(() => {
-        setError('');
-      }, 3000);
+        setError('')
+      }, 3000)
     } finally {
-      setIsSubmitting(false);
+      setIsSubmitting(false)
     }
-  };
+  }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
-    });
-  };
+    })
+  }
 
   return (
     <section id="contact" className="py-20 bg-[#121212] text-[#E2E8F0]">
@@ -147,11 +147,12 @@ const Contact = () => {
               <div className="space-y-4">
                 <p className="flex items-center">
                   <Mail className="w-5 h-5 mr-3" />
-                  wojciech@example.com
+                  wojciech@nojszewski.net
                 </p>
                 <p className="flex items-center">
                   <MapPin className="w-5 h-5 mr-3" />
-                  Warsaw, Poland (CET)
+                  /dev/null (okay, not really :D)
+                  Poland
                 </p>
               </div>
             </div>
@@ -170,7 +171,7 @@ const Contact = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact

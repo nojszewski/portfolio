@@ -1,13 +1,13 @@
-import React from 'react';
-import { Code2, Terminal, ChevronDown } from 'lucide-react';
+import React from 'react'
+import { Code2, Terminal, ChevronDown } from 'lucide-react'
 
 const Header = () => {
   const scrollDown = () => {
     window.scrollTo({
       top: window.innerHeight,
       behavior: 'smooth'
-    });
-  };
+    })
+  }
 
   return (
     <header className="min-h-screen flex items-center justify-center relative bg-[#0A192F] text-[#E2E8F0] px-4">
@@ -36,7 +36,7 @@ const Header = () => {
         <ChevronDown className="w-8 h-8" />
       </button>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
