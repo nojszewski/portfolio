@@ -20,15 +20,15 @@ const Header = () => {
           Wojciech Nojszewski
         </h1>
         <h2 className="text-2xl md:text-3xl mb-6 text-gray-400">
-          Full Stack Developer
+          Sysadmin, DevOps, and Backend Developer
         </h2>
         <p className="text-xl leading-relaxed max-w-2xl">
-          Passionate about creating elegant solutions to complex problems. 
-          Specializing in modern web technologies and scalable architecture. 
-          Committed to writing clean, maintainable code that makes a difference.
+          Experienced in system administration, programming, and DevOps. 
+          Skilled in managing infrastructure, developing software, and automating workflows. 
+          Dedicated to optimizing performance and ensuring reliability.
         </p>
       </div>
-      <button 
+      <button ``
         onClick={scrollDown}
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2 p-2 hover:text-gray-300 animate-bounce"
         aria-label="Scroll down"
