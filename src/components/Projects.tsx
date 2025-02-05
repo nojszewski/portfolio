@@ -13,7 +13,7 @@ const projects = [
     title: 'ZS1MM website',
     description: 'A website for my school. I did the design and development',
     tech: ['WordPress', 'CSS', 'JavaScript', 'Redis', 'MySQL'],
-    url: 'https://zs1mm.edu.pl',
+    url: 'https://nowa.zs1mm.edu.pl',
     urlText: 'Visit website'
   }
   // {

@@ -20,7 +20,7 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+              src="/about.png"
               alt="Profile"
               className="rounded-lg shadow-xl w-full max-w-sm mx-auto"
             />

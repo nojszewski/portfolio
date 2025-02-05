@@ -20,12 +20,12 @@ const Header = () => {
           Wojciech Nojszewski
         </h1>
         <h2 className="text-2xl md:text-3xl mb-6 text-gray-400">
-          Sysadmin, DevOps, and Backend Developer
+          Backend Developer, Server Admin
         </h2>
         <p className="text-xl leading-relaxed max-w-2xl">
           Experienced in system administration, programming, and DevOps. 
           Skilled in managing infrastructure, developing software, and automating workflows. 
-          Dedicated to optimizing performance and ensuring reliability.
+          Scroll down to see more.
         </p>
       </div>
       <button
