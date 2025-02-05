@@ -147,11 +147,10 @@ const Contact = () => {
               <div className="space-y-4">
                 <p className="flex items-center">
                   <Mail className="w-5 h-5 mr-3" />
-                  wojciech@nojszewski.net
+                  wojciech [at] nojszewski.net
                 </p>
                 <p className="flex items-center">
                   <MapPin className="w-5 h-5 mr-3" />
-                  /dev/null (okay, not really :D)
                   Poland
                 </p>
               </div>
@@ -159,11 +158,11 @@ const Contact = () => {
             <div>
               <h3 className="text-2xl font-bold mb-4">Social Links</h3>
               <div className="flex space-x-4">
-                <a href="#" className="hover:text-gray-300">
-                  <Linkedin className="w-6 h-6" />
+                <a href="https://github.com/nojszewski" className="hover:text-gray-300">
+                  <Github className="w-6 h-6" />
                 </a>
                 <a href="#" className="hover:text-gray-300">
-                  <Github className="w-6 h-6" />
+                  <Linkedin className="w-6 h-6" />
                 </a>
               </div>
             </div>
